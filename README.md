@@ -2,7 +2,7 @@
 
 A simple proxy server that redirects to different urls.
 
-## Options
+## Arguments
 
 ```bash
 --route='regex url'
@@ -10,6 +10,8 @@ A simple proxy server that redirects to different urls.
 ```
 
 where `--route` is split on whitespace, and creates a regex of the first string and a url of the second string. If only a url is specified, it will match anything.
+
+The application accepts multiple `--route` arguments, and executes them in the order they are passed.
 
 ## Example
 
